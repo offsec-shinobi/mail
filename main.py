@@ -25,6 +25,7 @@ Venu.
 
 
 attachment  = "Path to the file"
+def func():
     mail = outlook_app.CreateItem(0)
 
     mail._oleobj_.Invoke(*(64209, 0, 8, 0, send_account))
@@ -38,3 +39,7 @@ attachment  = "Path to the file"
     mail.Attachments.Add(attachment)
 
     mail.Send()
+
+
+
+func()
